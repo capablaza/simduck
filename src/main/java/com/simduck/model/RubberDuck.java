@@ -1,14 +1,11 @@
 package com.simduck.model;
 
-public class RubberDuck extends Duck  implements Quackable , Flyable{
+public class RubberDuck extends Duck{
 
-    public void quack() {
-        System.out.println("I can do quack!");
-    }
-
-    public void fly() {
-        System.out.println("I  can't fly");
-    }
+   public RubberDuck(){
+       flyBehavior = new FlyNoWay();
+       quackBehavior = new Squeak();
+   }
 
     public void display() {
         System.out.println("I'm RubberDuck!");

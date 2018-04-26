@@ -1,13 +1,10 @@
 package com.simduck.model;
 
-public class RealGreenDuck extends Duck implements Quackable, Flyable {
+public class RealGreenDuck extends Duck{
 
-    public void quack() {
-        System.out.println("I can do quack!");
-    }
-
-    public void fly() {
-        System.out.println("I can fly");
+    public RealGreenDuck(){
+        flyBehavior = new FlyWithWings();
+        quackBehavior = new Quack();
     }
 
     public void display() {
