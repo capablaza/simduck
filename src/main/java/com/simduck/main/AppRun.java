@@ -1,6 +1,5 @@
 package com.simduck.main;
 
-import com.simduck.model.Duck;
 import com.simduck.model.RealGreenDuck;
 import com.simduck.model.RedHeadDuck;
 import com.simduck.model.RubberDuck;
@@ -15,7 +14,24 @@ public class AppRun {
 
     }
 
-    private static void print(Duck duck){
+
+    public static void print(RealGreenDuck duck){
+        System.out.println();
+        duck.swim();
+        duck.quack();
+        duck.fly();
+        duck.display();
+    }
+
+    public static void print(RedHeadDuck duck){
+        System.out.println();
+        duck.swim();
+        duck.quack();
+        duck.fly();
+        duck.display();
+    }
+
+    public static void print(RubberDuck duck){
         System.out.println();
         duck.swim();
         duck.quack();
