@@ -19,6 +19,7 @@ public class AppRun {
         System.out.println();
         duck.swim();
         duck.quack();
+        duck.fly();
         duck.display();
     }
 }
